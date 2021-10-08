@@ -1,0 +1,219 @@
+.header {
+    width: 100%;
+    display: flex;
+    padding: 10px 150px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+
+  
+}
+
+.menu-btn {
+    display: none;
+}
+.close-btn{
+    display: none;
+}
+
+.menu-toggle-icon {
+    display: none;
+}
+
+.brand-logo img {
+    height: 80px;
+    transition: 256ms;
+}
+
+.menu {
+    display: block;
+    transition: 256ms;
+    padding: .5rem 1rem;
+}
+
+.menu.menu-active {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    color: #111111;
+    font-size: 90%;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right div {
+    margin: 0 10px;
+}
+
+.header.active {
+    width: 100%;
+    background: #fff;
+    padding-top: 8px !important;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+}
+
+.header.active .brand-logo img {
+    height: 50px;
+}
+
+.search-icon {
+    color: #C80E1B;
+    font-size: 18px;
+}
+
+.login-signup button, .menu ul li button {
+    margin: 0 10px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #111;
+    font-weight: 700;
+    font-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.login-signup button.signup, .menu ul li button.signup {
+    background-color: #C80E1B;
+    padding: 8px 20px;
+    color: #fff;
+    font-size: 95%;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width:768px) {
+    .menu ul li button{
+        display: none;
+    }
+  
+}
+
+@media only screen and (max-width:768px) {
+    .menu-toggle-icon {
+        display: block;
+    }
+    .close-btn{
+        display: block;
+    }
+    .header {
+        width: 100%;
+        display: flex;
+        padding: 10px 30px;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+    }
+   
+    .menu.mobile-menu-active {
+        display: block;
+        left: 0;
+        
+    }
+ 
+
+    .menu.menu-active {
+        display: none;
+    }
+
+    .header.active .brand-logo img {
+        height: 60px;
+    }
+
+    /* .menu{
+        width: 0;
+    } */
+ 
+ 
+    .menu {
+        display: none;
+        width: 50%;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        left: -5%;
+        background-color: green;
+        transition: width 1s ease-out;
+    }
+
+    .menu ul{
+        overflow: hidden;
+    }
+
+    .menu ul li{
+        display: block;
+        text-align: center;
+    }
+    .header .menu-icon {
+        position: relative;
+        display: block;
+        padding: 20px 0px;
+        cursor: pointer;
+    }
+    .header .nav-icon {
+        position: relative;
+        display: block;
+        height: 2px;
+        width: 30px;
+        background: red;
+        transition: background .2s ease-out;
+    }
+    .header .menu-icon .nav-icon::before {
+        position: absolute;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: red;
+        top: 7px;
+        transition: all .2s ease-out;
+    }
+    .header .menu-icon .nav-icon::after {
+        position: absolute;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: red;
+        top: -7px;
+        transition: all .2s ease-out;
+    }
+    .header .menu-btn {
+        display: none;
+    }
+    /* .header .menu-btn:checked~.menu {
+        width: 100%;
+    }
+    .header .menu-btn:checked~.menu-icon .nav-icon {
+        background: transparent;
+    }
+    .header .menu-btn:checked~.menu-icon .nav-icon::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    .header .menu-btn:checked~.menu-icon .nav-icon::after {
+        transform: rotate(45deg);
+        top: 0;
+    } */
+
+   
+    
+
+    .login-signup{
+        display: none;
+    }
+}
