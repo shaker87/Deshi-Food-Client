@@ -1,18 +1,18 @@
 .header {
     width: 100%;
     display: flex;
-    padding: 10px 150px;
+    padding: 10px 110px;
     align-items: center;
     justify-content: space-between;
     position: fixed;
-
-  
+    background-color: #FFFFFF;
+    z-index: 1000;
 }
-
 .menu-btn {
     display: none;
 }
-.close-btn{
+
+.close-btn {
     display: none;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .brand-logo img {
-    height: 80px;
+    height: 70px;
     transition: 256ms;
 }
 
@@ -29,10 +29,12 @@
     display: block;
     transition: 256ms;
     padding: .5rem 1rem;
+    
 }
 
 .menu.menu-active {
     display: block;
+   
 }
 
 .menu ul {
@@ -97,18 +99,21 @@
 }
 
 @media only screen and (min-width:768px) {
-    .menu ul li button{
+    .menu ul li button {
         display: none;
     }
-  
 }
 
 @media only screen and (max-width:768px) {
     .menu-toggle-icon {
         display: block;
     }
-    .close-btn{
+    .close-btn {
         display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+       
     }
     .header {
         width: 100%;
@@ -118,43 +123,31 @@
         justify-content: space-between;
         position: fixed;
     }
-   
     .menu.mobile-menu-active {
         display: block;
         left: 0;
-        
+        padding-top: 20px;
     }
- 
-
     .menu.menu-active {
         display: none;
     }
-
     .header.active .brand-logo img {
         height: 60px;
     }
-
-    /* .menu{
-        width: 0;
-    } */
- 
- 
     .menu {
-        display: none;
         width: 50%;
         height: 100vh;
         position: absolute;
         top: 0px;
-        left: -5%;
-        background-color: green;
+        left: -100%;
+        background-color: #fff;
         transition: width 1s ease-out;
+        z-index: 999999;
     }
-
-    .menu ul{
+    .menu ul {
         overflow: hidden;
     }
-
-    .menu ul li{
+    .menu ul li {
         display: block;
         text-align: center;
     }
@@ -209,11 +202,7 @@
         transform: rotate(45deg);
         top: 0;
     } */
-
-   
-    
-
-    .login-signup{
+    .login-signup {
         display: none;
     }
 }
