@@ -1,0 +1,79 @@
+.subscribe-area {
+    margin-top: 100px;
+    /* background-color: #C80E1B; */
+    position: relative;
+}
+
+.subscribe-form {
+    background-color: #C80E1B;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.food-image-wrapper {
+    padding-top: 80px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.food-img {
+    position: absolute;
+    height: 336px;
+    z-index: 9;
+    top: -217%;
+    left: 5%;
+}
+
+.subscribe-form-box{
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.subscribe-form-box h2{
+    font-size: 50px;
+    color: #C80E1B;
+    font-weight: 500;
+}
+.subscribe-form-box p{
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 30px;
+}
+.input-field{
+    position: relative;
+    width: 70%;
+    margin: 0px auto;
+}
+
+.input-field input{
+    border: none;
+    outline: none;
+    width: 100%;
+    margin: 0px auto;
+    border: 1px solid #C80E1B !important;
+    padding: 20px;
+    border-radius: 40px;
+    position: relative;
+}
+.input-field input::placeholder{
+    font-family: 'Lato', sans-serif;
+}
+
+.input-field .submit-btn{
+    background-color: #C80E1B;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 9;
+    border: none;
+    padding: 17px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 0px 40px 40px 0px;
+}

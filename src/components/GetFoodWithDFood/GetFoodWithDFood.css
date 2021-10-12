@@ -1,0 +1,119 @@
+.get-food-with-dfood-wrapper {
+    position: relative;
+    min-height: 400px;
+    width: 100%;
+    color: white;
+    margin-top: 170px;
+}
+
+.section-color {
+    background-color: #C70E1B;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transform: rotate( -3deg);
+    height: 70%;
+}
+
+.section-color::after {
+    background-color: #C70E1B;
+    content: "";
+    display: block;
+    clear: both;
+    width: 101%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(28%) rotate( 3deg);
+    clip-path: polygon(0.15% 90%, 0.125% 100%, 100% 250%, 98.86% 0%);
+}
+
+.section-wrapper-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    transform: translateY(18%);
+}
+
+.food-mobile, .get-content {
+    transform: translateY(-42%);
+}
+
+.food-mobile {
+    height: 460px;
+    overflow: hidden;
+}
+
+.get-content {
+    padding: 24px;
+}
+
+.food-mobile, .get-content {
+    transform: translateY(-42%);
+}
+
+.get-content h2 {
+    font-size: 46px;
+}
+.get-content p{
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight:300;
+}
+.store-app{
+    display: flex;
+}
+.store-img{
+    height: 50px;
+    text-align: left;
+}
+
+.get-dfood-dish {
+    position: absolute;
+    top: -55%;
+    right: 0;
+    border: 30px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+}
+
+.get-dfood-dish img {
+    width: calc(100% + 14px);
+    transform: translate(-7px, -8px);
+}
+
+@media screen and (max-width: 991px) {
+    .section-color {
+        transform: rotate(
+    0deg);
+        height: auto;
+    }
+    .section-color::after {
+        background-color: #C70E1B;
+        content: "";
+        display: block;
+        clear: both;
+        width: 101%;
+        height: 100px;
+        position: absolute;
+        bottom: 27px;
+        transform: translateY(28%) rotate(
+    0deg);
+        -webkit-clip-path: polygon(0.15% 90%, 0.125% 100%, 100% 250%, 98.86% 0%);
+        clip-path: polygon(0.15% 90%, 0.125% 100%, 100% 250%, 98.86% 0%);
+    }
+    .get-content {
+        padding-top: 90px !important;
+    }
+    .food-mobile, .get-content {
+        transform: translate(0);
+    }
+}

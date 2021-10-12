@@ -11,3 +11,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Butler Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Butler Regular'), url('../src/assets/font/Butler_Regular.otf') format('woff');
+  }
+  
+
+  /* @font-face {
+  font-family: 'Butler UltraLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Butler UltraLight'), url('Butler_Ultra_Light.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Butler Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Butler Light'), url('../src/asstets/font/Butler_Light.otf') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Butler Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Butler Medium'), url('Butler_Medium.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Butler Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Butler Bold'), url('Butler_Bold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Butler ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Butler ExtraBold'), url('Butler_ExtraBold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Butler Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Butler Black'), url('Butler_Black.woff') format('woff');
+  } */

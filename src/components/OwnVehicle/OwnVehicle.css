@@ -1,0 +1,23 @@
+.own-vehicle{
+    position: relative;
+    padding: 80px 0px 50px 0px;
+}
+.vehicle-background{
+    position: absolute;
+    overflow: hidden;
+}
+.vehicle-img {
+    margin-top: -15%;
+    width: 125%;
+    margin-left: -25%;
+}
+.section-vehicle{
+    display: flex;
+    justify-content: space-between;
+}
+.vehicle-list-item li{
+    list-style-image: url(../../images/arrow-right.png);
+    padding: 5px 0px;
+    font-size: 15.5px;
+    font-family: 'Lato', sans-serif;
+}

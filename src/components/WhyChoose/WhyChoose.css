@@ -2,7 +2,7 @@
     margin: 50px auto;
 }
 .choose-bg{
-    background-color: #FFEBEB;
+    /* background-color: #FFEBEB; */
     padding: 20px;
 
 }
@@ -31,8 +31,9 @@
     color: #C80E1B;
 }
 .choose-box p {
-    font-size: 80%;
+    font-size: 100%;
     color: #222;
+    font-family: 'Lato', sans-serif;
 }
 
 /* .choose-arrow img{

@@ -21,6 +21,9 @@
 .slider-content h1 {
     font-size: 70px;
     color: #1F6A2F;
+    /* font-family: 'Work Sans', sans-serif; */
+    font-family: 'Butler Regular', serif;
+    font-weight: 700;
 }
 
 .slider-content h1 .color1 {
@@ -39,7 +42,8 @@
     padding: 16px 24px;
     color: #fff;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .btn-header .btn-text {
@@ -56,6 +60,8 @@
 .how-to-order {
     text-decoration: none;
     margin-left: 30px;
+    
+    
 }
 
 .shadow {
@@ -69,6 +75,7 @@
 .how-span-text {
     margin-left: 15px;
     font-size: 25px;
+    font-family: 'Butler Regular', serif !important;
 }
 
 .rounded-circle {

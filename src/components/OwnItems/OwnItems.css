@@ -1,0 +1,42 @@
+
+
+.own-items {
+    width: 100%;
+    background-color: #FFEBEB;
+    padding: 50px 0px 20px 0px;
+    margin-top: -112px;
+    z-index: 9;
+    position: relative;
+}
+.own-content .color1{
+    color: #C80E1B;
+    font-size: 32px;
+    font-weight: 600;
+}
+.own-content .color2{
+    color: #1F6A2F;
+    font-size: 32px;
+    font-weight: 600;
+}
+.own-content p{
+    font-size: 15.5px;
+    font-family: 'Lato', sans-serif;
+    margin: 20px 0;
+}
+.list-item li{
+    list-style-image: url(../../images/arrow-right.jpg);
+    padding: 5px 0px;
+    font-size: 15.5px;
+    font-family: 'Lato', sans-serif;
+}
+.become-partner-btn{
+    border: none;
+    background-color: #C80E1B;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.become-partner-btn:hover{
+    color: #fff;
+}
