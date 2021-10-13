@@ -1,0 +1,49 @@
+.login-area{
+    font-family: 'Lato', sans-serif;
+}
+.login-form{
+    padding: 20px 20px 30px 20px !important;
+}
+.input-style {
+    border-bottom: 2px solid #bbb;
+}
+.color2 {
+    color: #0A811D !important;
+    margin-right: 10px;
+}
+.focus-outline-0:focus {
+    outline: 0 !important;
+}
+
+.input-style input {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.input-style::after {
+    content: "";
+    display: block !important;
+    clear: both;
+    width: 0%;
+    height: 2px;
+    background: #000 !important;
+    bottom: -2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    transition: 256ms;
+}
+.input-style.active::after {
+    width: 100%;
+}
+
+.bg-color1, .bg-color1:hover {
+    background-color: #C80E1B;
+}
+
+.text-right {
+    text-align: right!important;
+    text-decoration: none;
+}

@@ -1,20 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
-import logo from "../../images/brand.png";
+import logo from "../../../images/brand.png";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
+  const location = useLocation();
+  
   const [scrolled, setScrolled] = useState(false);
   const [menuToggle, setMenuToggle] = useState(false);
-
   const toggleMenu = () => setMenuToggle(!menuToggle);
-  console.log("menuToggle :>> ", menuToggle);
+
 
   useEffect(() => {
-    // const isMobile = /Android|webOS|iPhone|Opera Mini/i.test(
-    //   navigator.userAgent
-    // );
-    // console.log("isMobile :>> ", isMobile);
-
     const handleScroll = (_) => {
       if (window.pageYOffset > 25) {
         return setScrolled(true);
@@ -29,7 +26,8 @@ export default function Navbar() {
   }, [scrolled, menuToggle]);
 
   return (
-    <nav className={scrolled ? "header active" : "header"}>
+    <nav className={scrolled || location.pathname === "/login" || location.pathname === "/signup"
+     ? "header active" : "header"}>
       <div className="menu-toggle-icon">
         <input
           type="checkbox"
@@ -43,7 +41,9 @@ export default function Navbar() {
       </div>
 
       <div className="brand-logo">
-        <img src={logo} alt="Brand" srcset="" />
+        <Link to="/home">
+          <img src={logo} alt="Brand" srcset="" />
+        </Link>
       </div>
 
       <div
@@ -62,15 +62,27 @@ export default function Navbar() {
           <li>About Us</li>
           <li>Team</li>
           <li>Careers</li>
-          <li>Partner with us</li>
-          <li>Ride with us</li>
+          <li>
+            <Link to="/signup" className="menu-item">
+              Partner with us
+            </Link>
+          </li>
+          <li>
+            <Link to="/signup" className="menu-item">
+              Ride with us
+            </Link>
+          </li>
           <li>Help & Support</li>
 
           <li>
-            <button className="login">Login</button>
+            <Link to="/login">
+              <button className="login">Login</button>
+            </Link>
           </li>
           <li>
-            <button className="signup">Signup</button>
+            <Link to="/signup">
+              <button className="signup">Signup</button>
+            </Link>
           </li>
         </ul>
       </div>
@@ -80,8 +92,12 @@ export default function Navbar() {
           <i className="fas fa-search"></i>
         </div>
         <div className="login-signup">
-          <button className="login">Login</button>
-          <button className="signup">Signup</button>
+          <Link to="/login">
+            <button className="login">Login</button>
+          </Link>
+          <Link to="/signup">
+            <button className="signup">Signup</button>
+          </Link>
         </div>
       </div>
     </nav>

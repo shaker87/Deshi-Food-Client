@@ -19,8 +19,8 @@ function OwnVehicle() {
         <div className="row">
           <div className="col-md-6">
             <div className="section-vehicle px-md-5">
-              <img height="170px" src={vehicleCycle} alt="" srcset="" />
-              <img height="181px" src={vehicleBike} alt="" srcset="" />
+              <img  height="170px" src={vehicleCycle} alt="" srcset="" />
+              <img  height="181px" src={vehicleBike} alt="" srcset="" />
             </div>
           </div>
           <div className="col-md-6">

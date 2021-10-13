@@ -40,6 +40,9 @@ const HeroSlider = () => {
     },
 
   ];
+
+  const [toggleVideo, setToggleVideo] = useState(false);
+  const handleToggle = () => setToggleVideo(!toggleVideo);
   const [, setSlideIndex] = useState(0);
 
   const onClickHandler = (swiper) => {
@@ -71,11 +74,20 @@ const HeroSlider = () => {
         {sliderPart.map((slide, i) => {
           return (
             <SwiperSlide key={i}>
-              <SingleSlider totalData={slide} />
+              <SingleSlider totalData={slide} handleToggle={handleToggle} />
             </SwiperSlide>
           );
         })}
       </Swiper>
+
+      <div className={toggleVideo ? 'video-player active' : 'video-player'}>
+        <iframe title="This is a unique title"
+          src="https://www.youtube.com/embed/SMKPKGW083c?controls=0"
+    
+        >
+          <i className="fa fa-times"></i>
+        </iframe>
+      </div>
     </div>
   );
 };

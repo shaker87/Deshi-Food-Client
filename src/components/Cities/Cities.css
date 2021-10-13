@@ -7,10 +7,10 @@
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 5px 10px;
     border-radius: 5px;
-    margin: 0px 10px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    /* margin: 0px 10px; */
+    /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); */
 }
 .cities-header h1{
     color: #C80E1B;

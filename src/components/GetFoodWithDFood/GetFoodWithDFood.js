@@ -28,31 +28,6 @@ function GetFoodWithDFood() {
 					</div>
 				</div>
 			</div>
-            {/* <div className="own-items bg-color5">
-			<div className="section-body mt-lg-0 mt-5 mt-lg-n5 container">
-				<div className="row ml-lg-4">
-					<div className="col-lg-6">
-						<div>
-							<h2 className="font2 font-weight-semi">
-								<span className="color1">Own a Restaurant?</span> <br />
-								<span className="color3">Join our Food Merchant Network</span>
-							</h2>
-							<p className="mt-4 font-95">Reach out to a wider set to customers and enhance your revenues with takeaways powered by dFood delivery platform.</p>
-							<ul className="mt-4 ml-3 list-become">
-								<li>Get your food featured</li>
-								<li>Enjoy an exposure to a huge customer base</li>
-								<li>Increase your sales through collaborative campaingns</li>
-							</ul>
-							<a href="#" className="btn btn-danger btn-lg bg-color1 mt-4 font2 font-weight-semi px-4">Become  Partner</a>
-						</div>
-					</div>
-					<div className="col-lg-6">
-						<img className="w-100" src="./assets/img/get/restaurant-building-flat-design-architecture-facade-food-cafe-construction-vector-illustration.png" alt="restaurant-building-flat" />
-					</div>
-				</div>
-			</div>
-		</div> */}
-	
 		</div>
 		
     )

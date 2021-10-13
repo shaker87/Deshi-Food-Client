@@ -7,7 +7,7 @@ function Subscribe() {
     <>
       <div className="subscribe-area">
         <div className="container food-image-wrapper">
-          <img className="food-img" src={foodImg} alt="" srcset="" />
+          <img className="food-img img-fluid" src={foodImg} alt="" srcset="" />
         </div>
       </div>
       <div className="subscribe-form">
